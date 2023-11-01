@@ -5,7 +5,8 @@ import saladImage from './assets/saladImage.jpg';
 import cheeseImage from './assets/cheeseImage.jpg';  
 import meatImage from './assets/meatImage.jpg';  
 import baconImage from './assets/baconImage.jpg'; 
-
+import './App.css';  
+ 
 const INGREDIENTS = [
   { name: 'Салат', price: 10, image: saladImage },
   { name: 'Сыр', price: 50, image: cheeseImage },
