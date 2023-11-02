@@ -1,42 +1,80 @@
+body{
+  background-color: #7c7c7c;
+}
+
 .app {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   font-family: Arial, sans-serif;
+  background-color: #7c7c7c;
 }
 
 .ingredients {
   width: 60%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);  
   gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.burger {
-  width: 35%;
-  height: 650px;
-  padding: 20px;
+.burger{
+  width: 35%;  
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+.burgerImage {
+  height: 75%; 
+  padding: 20px; 
+  overflow: hidden;
+}
+
+.burgerInfo{
+  padding: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  height: 25%;
 }
 
 .ingredient {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .ingredient img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px; 
 }
 
 .ingredient-info {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
 }
+
+.ingredient-btns{
+  display: flex; 
+  flex-direction: column;
+} 
 
 button {
   background-color: #f7b733;
@@ -168,30 +206,34 @@ button:hover {
 .Burger {
   width: 100%;
   margin: auto;
-  height: 250px;
+  max-height: 600px;
   overflow: auto;
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 1000px) and (min-height: 700px) {
   .Burger {
-      width: 700px;
-      height: 600px;
+    width: 700px;
+    max-height: 600px;
   }
 }
 
 @media (min-width: 500px) and (min-height: 401px) {
   .Burger {
-      width: 450px;
-      height: 300px;
+    width: 450px;
+    max-height: 300px;
   }
 }
 
 @media (min-width: 500px) and (max-height: 400px) {
   .Burger {
-      width: 350px;
-      height: 200px;
+    width: 350px;
+    max-height: 200px;
   }
 }

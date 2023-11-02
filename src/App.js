@@ -8,10 +8,10 @@ import baconImage from './assets/baconImage.jpg';
 import './App.css';  
  
 const INGREDIENTS = [
-  { name: 'Салат', price: 10, image: saladImage },
-  { name: 'Сыр', price: 50, image: cheeseImage },
-  { name: 'Мясо', price: 80, image: meatImage },
-  { name: 'Бекон', price: 60, image: baconImage },
+  { name: 'Салат', price: 10, image: saladImage, className: 'Salad'},
+  { name: 'Сыр', price: 50, image: cheeseImage, className: 'Cheese'},
+  { name: 'Мясо', price: 80, image: meatImage, className: 'Meat'},
+  { name: 'Бекон', price: 60, image: baconImage, className: 'Bacon'},
 ];
 
 function App() {
